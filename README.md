@@ -1,2 +1,2 @@
 # react-cli
-webpack4, single &amp; mulitiple page, happypack
+一种类似于vue-cli的结合webpack4，happypack，css scope以及自动生成单页与多页的cli
