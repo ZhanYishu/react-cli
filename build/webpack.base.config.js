@@ -1,6 +1,4 @@
 const entriesConfig = require('./entries')
-const config = require('../config')
-const path = require('path')
 const webpack = require('webpack')
 const eslintFormatter = require('react-dev-utils/eslintFormatter')
 const resolve = require('./utils').resolve
@@ -29,8 +27,8 @@ module.exports = {
       // 抽离入口文件公共模块为commmons模块
       cacheGroups: {
         commons: {
-          name: "commons",
-          chunks: "initial",
+          name: 'commons',
+          chunks: 'initial',
           minChunks: 2
         }
       }
@@ -61,7 +59,7 @@ module.exports = {
         //     loader: 'eslint-loader',
         //   },
         // ],
-        include: resolve('src'),
+        include: resolve('src')
       },
       {
         test: /\.(png|jpe?g|gif|svg)$/,

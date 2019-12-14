@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import logo from 'assets/image/logo.svg'
+// import logo from 'assets/image/logo.svg'
 // css作用域配合react使用插件
 import CSSModules from 'react-css-modules'
 import styles from './index.scss'
@@ -25,7 +25,7 @@ class App extends Component {
       <div className="center">
         good
         <header styleName="App-header">
-          <img src={logo} styleName="App-logo" alt="logo" />
+          <img src="public/image/logo.svg" styleName="App-logo" alt="logo" />
           <h1 styleName="App-title">Welcome to my React</h1>
         </header>
         <AppComponent name={this.state.name} open={this.openDialog}/>

@@ -1,5 +1,5 @@
 const baseWebpackConfig = require('./webpack.base.config')
-const merge =  require('webpack-merge')
+const merge = require('webpack-merge')
 const htmlPlugins = require('./html-plugins.config')
 const { resolve } = require('./utils')
 const config = require('../config')
@@ -31,8 +31,8 @@ let webpackConfig = merge(baseWebpackConfig, {
     }),
     new CopyWebpackPlugin([
       {
-        from: resolve('static'),
-        to: resolve('dist/static'),
+        from: resolve('public'),
+        to: resolve('dist/public'),
         ignore: ['.*']
       }
     ])

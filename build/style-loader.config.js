@@ -20,8 +20,8 @@ let loaders = [
     loader: 'sass-resources-loader',
     options: {
       // 配置sass全局变量引用地址
-      resources: resolve('src/styles/variables.scss'),
-    },
+      resources: resolve('src/styles/variables.scss')
+    }
   },
   'postcss-loader'
 ]
