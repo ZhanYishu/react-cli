@@ -28,13 +28,14 @@ const compiler = webpack(webpackConfig)
 const devMiddleware = webpackDevMiddleware(compiler, {
   publicPath: webpackConfig.output.publicPath
 })
-
 app.use(devMiddleware)
 
 app.use(hotMiddleware(compiler, {
   log: false,
   heartbeat: 2000
 }))
+
+app.use('/public', express.static('public'))
 
 // 代理配置
 Object.keys(proxy).forEach(function (context) {
