@@ -2,7 +2,7 @@ const path = require('path')
 
 module.exports = {
   dev: {
-    port: '3000',
+    port: '8000',
     // 是否自动打开浏览器
     autoOpenBrowser: true,
     proxy: {

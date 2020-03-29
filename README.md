@@ -1,5 +1,5 @@
 # react-cli
-一种类似于vue-cli的结合webpack4，happypack，css scope以及自动生成单页与多页的cli
+结合webpack4，happypack，css scope以及自动生成单页与多页的cli
 ### 使用webpack4
 1、删除码拆分插件commonChunkPlugin替换为optimization.splitChunks配置，真正做到了代码拆分无重复，显著提升了构建速度与质量
 具体参考： [SplitChunksPlugin](https://webpack.docschina.org/plugins/split-chunks-plugin/)
